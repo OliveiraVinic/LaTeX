@@ -1,3 +1,20 @@
+%% classe baseada na classe article do LaTeX, alterada para as necessidades 
+%% em elaboração de provas
+
+%% elaborado por Vinicius de Abreu Oliveira
+%% contato: viniciusoliveira@unipampa.edu.br
+
+%%  Releases:
+%%  v1.0 - 27/09/2018:
+%%          Criação da classe prova.cls
+%%          Modificações do Original:
+%%				configurações da página (dimensões e margens)
+%%          Criado de novo:
+%%              \curso{curso}; \data; \disciplina; \questão; \questaoU,
+%%              cabeçário personalizado
+%%				símbolos e formatos matemáticos
+
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{provas}[2018/09/27 v1.0 Modelo para elaboração de provas]
 
