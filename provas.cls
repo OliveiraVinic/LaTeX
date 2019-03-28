@@ -9,14 +9,19 @@
 %%          Criação da classe prova.cls
 %%          Modificações do Original:
 %%				configurações da página (dimensões e margens)
-%%          Criado de novo:
+%%          Criado novo:
 %%              \curso{curso}; \data; \disciplina; \questão; \questaoU,
 %%              cabeçário personalizado
 %%				símbolos e formatos matemáticos
-
+%%  v1.1 - 28/03/2019:
+%%          Criado novo:
+%%              \nome
+%%              cabeçário personalizado com ou sem nome
+%%                  se \nome{sem} -> deixa linha em branco
+%%                   ou \nome{Nome da Pessoa} -> coloca o nome em negrito
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{provas}[2018/09/27 v1.0 Modelo para elaboração de provas]
+\ProvidesClass{provas}[2019/03/28 v1.1 Modelo para elaboração de provas]
 
 \LoadClass[12pt,a4paper]{article}
 
@@ -60,6 +65,7 @@
 \newcommand{\curso}[1]{\gdef\@curso{#1}}        	
 \newcommand{\data}[1]{\gdef\@data{#1}}        		
 \newcommand{\disciplina}[1]{\gdef\@disciplina{#1}}  
+\newcommand{\nome}[1]{\gdef\@nome{#1}}  
 
 %--------------------------------------------------------------------------------------------
 % montagem do cabeçário
@@ -85,7 +91,7 @@
  }% 
 
 \vspace{0.8cm}
-Nome: \hrulefill
+\ifthenelse{\equal{\@nome}{sem}}{Nome: \hrulefill}{Nome: {\bf \@nome}}
 
 \vspace{0.5cm}  %data e disciplina
   \begin{minipage}{0.5\textwidth}
