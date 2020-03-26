@@ -37,7 +37,7 @@
 %--------------------------------------------------------------------------------------------
 % definido o tamanho da página
 \usepackage{anysize}
-\textheight 24cm 
+\textheight 24cm
 \textwidth 16cm 
 \marginsize{2cm}{2cm}{0cm}{0cm}
 \setlength\parindent{0pt}
