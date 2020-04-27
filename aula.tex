@@ -1,0 +1,116 @@
+%% modelo de aula produzida utilizando LaTeX, baseado no Beamer
+
+%% elaborado por Vinicius de Abreu Oliveira
+%% contato: viniciusoliveira@unipampa.edu.br
+
+%%  Releases:
+%%  v1.0 - 27/04/2020:
+%%          Criação do modelo aula.tex
+%%          Utilização do esquema de cor: beamerthemeUNIPAMPA.sty
+%%          Criado novo:
+%%              \texto{coloque o texto aqui},
+%%              primeira página personalizada,
+%%				símbolos e formatos matemáticos
+
+\documentclass[dvipdfmx]{beamer}
+
+\mode<presentation>
+{
+\usetheme{UNIPAMPA}
+\setbeamercovered{invisible}
+}
+
+\usepackage{graphicx}
+\usepackage{pstricks,pst-text}
+\usepackage{ae} %fontes virtuais para arquivo PDF com fonte CMR codificado como T1 (este pacote resolve problemas do mapeamento de fontes acentuadas do Computer Modern no documento PDF)
+
+% Comando para justificar \setlength{\rightskip}{0pt} 
+\usepackage[utf8x]{inputenc}
+\usepackage[brazil]{babel}
+%\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}     
+\usepackage{ifpdf}
+\usepackage{amssymb}
+%\usepackage{indentfirst} 
+%\usepackage{color}
+%\usepackage{xcolor}
+%\usepackage{pstricks}
+%\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage{psfig}
+%\usepackage{pgf}	
+%\usepackage{epsf}
+%\usepackage{verbatim} 
+%\usepackage{wrapfig}
+
+\newcommand{\abs}[1]{|\,#1\,|} %módulo
+\newcommand{\norm}[1]{||\,#1\,||} %norma
+\newcommand{\dpp}[2]{\frac{\partial #1}{\partial #2}} %derivada parcial 
+\newcommand{\dps}[2]{\frac{\partial^2 #1}{\partial #2^2}} %derivada parcial de segunda ordem
+\newcommand{\dpm}[3]{\frac{\partial^2 #1}{\partial #2 \, \partial #3}} %derivada parcial de segunda ordem mixta
+\newcommand{\dsp}[2]{\frac{d #1}{d #2}} %derivada simples 
+\newcommand{\dss}[2]{\frac{d^2 #1}{d #2^2}} %derivada simples de segunda ordem
+\newcommand{\sen}{\mbox{sen}} % escreve a função seno como: sen
+\newcommand{\arcsen}{\mbox{arcsen}} % escreve a função arco seno como: arcsen
+\newcommand{\rn}[1]{\mathbb{R}^{#1}} % escreve o R real na potência(dimensão) desejada
+\newcommand{\dive}{\nabla \bullet} %divergente
+\newcommand{\diss}[1]{\displaystyle{#1}} % chama o displaystyle para modo matemático
+\newcommand{\grau}{$^{\rm o}$} % faz o símbolo de grau
+% comando para vetores unitários
+\newcommand{\ihat}{\hat{\imath}}      
+\newcommand{\jhat}{\hat{\jmath}}
+\newcommand{\khat}{\hat{\kappa}}
+% comando para escrever textos justificados
+\newcommand{\texto}[1]{\begin{minipage}{\textwidth} #1 \end{minipage}}
+% comando para escrever textos com acentos em sum-índice
+\newcommand{\mtexto}[1]{\mbox{\tiny #1}}
+
+%colocar uma figura apenas na primeira página
+%\addtobeamertemplate{title page}{\centering \includegraphics[scale=0.15]{figura.png}}
+
+%altere colocando os dados referente a sua aula
+\title{Disciplina - Aula `N\'umero' }
+\author[Prof. Seu Nome - ]{Prof. T\'itulo e Nome Completo}
+\institute[Curso]{UNIVERSIDADE FEDERAL DO PAMPA - UNIPAMPA, Campus Nome da Cidade} 
+\date{Semestre / Ano} 
+%
+
+%logo da UNIPAMPA
+\pgfdeclareimage[height=0.50cm]{university-logo}{logo_unipampa.eps}
+\logo{\pgfuseimage{university-logo}}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}
+\titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{Introdução}
+\subsection{Caixas}
+
+\begin{frame}
+\frametitle{Primeira Página}
+
+%exemplo de bloco padrão
+\begin{block}{Título}
+ \texto{Escrita completamente alinhada, o que facilita muito as coisas, especialmente quando o texto a ser escrito é longo. Isso porque eu não acho visualmente interessante o alinhamento lateral ou no centro}
+\end{block}
+\pause
+
+%exemplo de bloco segundário
+\begin{exampleblock}{Título}
+ \texto{Só para mostrar este outro esquema de cores}
+\end{exampleblock}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass{provas}
+\usepackage{graphicx}
+\usepackage{pstricks,pst-text}
+\usepackage[utf8x]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}     
+\usepackage{ifpdf}
+\usepackage{amssymb}
+
+
+\let\svthefootnote\thefootnote
+
+\curso{Curso}
+\disciplina{Disciplina}
+\data{Data da Prova}
+\nome{branco} %colocar o nome do aluno para personalizar a prova, se escrito branco deixará uma linha em branco
+
+\begin{document}
+
+%explicação geral sobre a prova
+\let\thefootnote\relax\footnote{\textit{\textbf{Atenção:} a consulta é permitida apenas para material manuscrito.}}
+\pagestyle{empty}
+
+\cabeca
+
+\vspace{0.5cm}
+\begin{center}
+ \textbf{\underline{Prova Número}}
+\end{center}
+
+%informações gerais da prova
+\vspace{0.5cm}
+\texto{\textit{Informações:} \textit{geralmente eu coloco aqui as constantes para a prova}.}
+
+%exemplo de questão padrão
+\vspace{0.75cm}
+\questao{Nota}{Escreva aqui o enunciado e a pergunta da questão.}
+
+%exemplo de questão com itens
+\vspace{0.75cm}
+\questaoI{Escreva aqui o enunciado da questão
+
+\textit{(Nota)} \textbf{a)} Primeiro item.
+
+\textit{(Nota)} \textbf{b)} Segundo item.}
+
+%exemplo de questão padrão
+\vspace{0.75cm}
+\questao{Nota}{Escreva aqui o enunciado e a pergunta da questão. (só para mostrar que a numeração é automática)}
+
+%exemplo de questão única
+\vspace{0.75cm}
+\questaoU{Muito similar a questão com itens, porém não recebe numeração.}
+
+
+\end{document}
+
+
+
+
+
+
+

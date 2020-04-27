@@ -1,0 +1,68 @@
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/theme/Vinicius.sty,v 1.0 5/03/2015 17:57:02 G.FALLOURD-M.LEBRETON Exp $
+\mode<presentation>
+\definecolor{sectionColor}{RGB}{51,153,0}
+\definecolor{subsectionColor}{RGB}{0,51,0}
+\definecolor{sectionTextColor}{RGB}{0,0,0}
+\definecolor{subsectionTextColor}{RGB}{255,255,255}
+\definecolor{leftFootlineColor}{RGB}{0,51,0}
+\definecolor{middleFootlineColor}{RGB}{51,153,255}
+\definecolor{rightFootlineColor}{RGB}{0,153,0}
+\definecolor{authorColor}{RGB}{255,255,255}
+\definecolor{footlineTitleColor}{RGB}{0,0,0}
+\definecolor{instituteColor}{RGB}{255,255,255}
+\definecolor{dateColor}{RGB}{0,0,0}
+\definecolor{pageColor}{RGB}{0,0,0}
+\definecolor{titleColor}{RGB}{0,51,51}
+\definecolor{titleTextColor}{RGB}{255,255,255}
+\definecolor{bodyColor}{RGB}{255,255,255}
+\definecolor{normalTextColor}{RGB}{0,0,0}
+\definecolor{exampleTextColor}{RGB}{51,153,51}
+\definecolor{alertTextColor}{RGB}{204,51,51}
+\definecolor{chipColor}{RGB}{0,0,102}
+\definecolor{chipTextColor}{RGB}{255,255,255}
+\definecolor{normalBlockColor}{RGB}{51,153,0}
+\definecolor{normalTitleBlockColor}{RGB}{0,51,0}
+\definecolor{normalBlockTextColor}{RGB}{255,255,255}
+\definecolor{normalBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockColor}{RGB}{204,153,0}
+\definecolor{exampleTitleBlockColor}{RGB}{0,51,0}
+\definecolor{exampleBlockTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockColor}{RGB}{153,0,0}
+\definecolor{alertTitleBlockColor}{RGB}{0,51,0}
+\definecolor{alertBlockTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockTitleTextColor}{RGB}{255,255,255}
+\setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
+\setbeamercolor{subsection in head/foot}{bg=subsectionColor, fg=subsectionTextColor}
+\setbeamercolor*{block title}{fg=normalBlockTitleTextColor,bg=normalTitleBlockColor}
+\setbeamercolor*{block body}{fg=normalBlockTextColor,bg=normalBlockColor}
+\setbeamercolor*{block title alerted}{fg=alertBlockTitleTextColor,bg=alertTitleBlockColor}
+\setbeamercolor*{block body alerted}{fg=alertBlockTextColor,bg=alertBlockColor}
+\setbeamercolor*{block title example}{fg=exampleBlockTitleTextColor,bg=exampleTitleBlockColor}
+\setbeamercolor*{block body example}{fg=exampleBlockTextColor,bg=exampleBlockColor}
+\setbeamerfont{block title}{size={}}
+\setbeamercolor{titlelike}{fg=titleTextColor,bg=titleColor}
+\setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
+\setbeamercolor*{example text}{fg=exampleTextColor}
+\setbeamercolor*{alerted text}{fg=alertTextColor}
+\useinnertheme[shadow=true]{rounded}
+\setbeamercolor{item projected}{bg=chipColor,fg=chipTextColor}
+\setbeamercolor{author in head/foot}{bg=leftFootlineColor, fg=authorColor}
+\setbeamercolor{title in head/foot}{bg=rightFootlineColor, fg=footlineTitleColor}
+\setbeamercolor{institute in head/foot}{fg=instituteColor}
+\setbeamercolor{date in head/foot}{bg=rightFootlineColor, fg=dateColor}
+\defbeamertemplate*{footline}{split theme}
+{%
+\leavevmode%
+\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+\usebeamerfont{author in head/foot}\insertshortauthor
+\usebeamerfont{institute in head/foot}\insertshortinstitute
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+\usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}
+}%
+\vskip0pt%
+}
+\mode
+<all>
