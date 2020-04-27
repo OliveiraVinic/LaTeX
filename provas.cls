@@ -37,7 +37,7 @@
 %--------------------------------------------------------------------------------------------
 % definido o tamanho da página
 \usepackage{anysize}
-\textheight 24cm 
+\textheight 24cm
 \textwidth 16cm 
 \marginsize{2cm}{2cm}{0cm}{0cm}
 \setlength\parindent{0pt}
@@ -133,7 +133,11 @@
  \end{minipage}
  \begin{minipage}{0.8\textwidth}
   \begin{center}
+<<<<<<< HEAD
    \hspace{-2cm} \textbf{Campus Nome da Cidade}\\
+=======
+   \hspace{-2cm} \textbf{Campus Ca\c{c}apava do Sul}\\
+>>>>>>> 24e07273419f79ff31344da73b6afbe3e61cc2e3
   \end{center}
   \begin{minipage}{0.5\textwidth}
    \begin{flushleft}
@@ -142,7 +146,11 @@
   \end{minipage}
   \begin{minipage}{0.5\textwidth}
    \begin{flushright}
+<<<<<<< HEAD
     \textbf{Prof.} Nome do Professor
+=======
+    \textbf{Prof.} Vinicius de Abreu Oliveira
+>>>>>>> 24e07273419f79ff31344da73b6afbe3e61cc2e3
    \end{flushright}  
   \end{minipage}
  \end{minipage}
