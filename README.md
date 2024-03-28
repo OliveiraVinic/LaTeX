@@ -1,2 +1,2 @@
 # LaTeX
-Reposotório com classes do LaTex para aulas, provas, posters e etc
+Repository with LaTeX classes to use in the classroom, tests, posters, etc. This is specific to UNIPAMPA (Brazil); however, it's possible to adapt to it. 
